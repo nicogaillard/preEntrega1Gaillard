@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+svg {
+  color: black;
+  transform: translate(3px, 2px);
+}
+
+.badge {
+  font-size: 0.6rem;
+  transform: translate(3px, -6px);
+}
