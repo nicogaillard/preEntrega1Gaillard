@@ -46,3 +46,28 @@ svg {
   font-size: 0.6rem;
   transform: translate(3px, -6px);
 }
+
+.cardProductos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  row-gap: 50px;
+}
+
+.agregarAlCarrito {
+  width: 95%;
+  align-self: center;
+}
+
+.cantAgregarCarrito {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  color: black;
+  background-color: #3e4450;
+  border-radius: 15px;
+}
+
+.btnAgregarCarrito {
+  grid-column: 1/ 4;
+}
