@@ -55,19 +55,38 @@ svg {
 }
 
 .agregarAlCarrito {
+  display: flex;
   width: 95%;
   align-self: center;
+  justify-content: center;
 }
 
 .cantAgregarCarrito {
   display: grid;
+  width: 80%;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   color: black;
   background-color: #3e4450;
   border-radius: 15px;
+  gap: 5px;
 }
 
 .btnAgregarCarrito {
   grid-column: 1/ 4;
+}
+
+.count {
+  width: 10%;
+  height: 100%;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.descripcionProducto {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }

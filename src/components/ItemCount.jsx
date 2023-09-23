@@ -3,7 +3,8 @@ import { Button } from "react-bootstrap"
 
 const stock = 3
 
-export const ItemCount = () => {
+
+export const ItemCount = ({onAdd}) => {
     const [count, setCount] = useState(1)
 
     const btnReducirCount = () => {
@@ -18,16 +19,13 @@ export const ItemCount = () => {
     }
 }
 
-const onAdd = () => {
-    alert(`Se agregaron ${count} al carrito`)
-}
 
 return (
     <div className="cantAgregarCarrito">
-        <span onClick={btnReducirCount}>-</span>
-        <span>{count}</span>
-        <span onClick={btnAumentarCount}>+</span>
-        <Button className="btn btn-primary btnAgregarCarrito" onClick={onAdd}>Agregar al Carrito</Button>
+        <Button variant="danger" onClick={btnReducirCount}>-</Button>
+        <span className="count">{count}</span>
+        <Button variant="success" onClick={btnAumentarCount}>+</Button>
+        <Button className="btn btn-primary btnAgregarCarrito" onClick={() => onAdd(count)}>Agregar al Carrito</Button>
     </div>
 )
 }
