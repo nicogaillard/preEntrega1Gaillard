@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -48,9 +49,11 @@ svg {
 }
 
 .cardProductos {
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto(1fr);
   row-gap: 50px;
 }
 
@@ -89,4 +92,8 @@ svg {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+}
+
+.cargando {
+  transform: translate(50vw, 50vh)
 }
